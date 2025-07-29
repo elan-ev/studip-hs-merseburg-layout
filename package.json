@@ -1,0 +1,30 @@
+{
+    "name": "elan-ev/studip-layout-hs-merseburg",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/studip-layout-hs-merseburg-lib.umd.cjs",
+    "module": "./dist/studip-layout-hs-merseburg-lib.js",
+    "exports": {
+        ".": {
+            "import": "./dist/studip-layout-hs-merseburg-lib.js",
+            "require": "./dist/studip-layout-hs-merseburg-lib.umd.cjs"
+        }
+    },
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "dev-build": "vite build --mode development",
+        "watch": "vite build --watch --mode development"
+    },
+    "dependencies": {
+        "vue": "^3.5.17"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^6.0.0",
+        "vite": "^6.3.5"
+    }
+}

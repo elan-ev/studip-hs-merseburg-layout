@@ -1,0 +1,6 @@
+pluginclassname=HsMerseburgLayout
+pluginname=HsMerseburgLayout
+origin=elan-ev
+version=1.0.0
+studipMinVersion=6.0.alpha
+studipMaxVersion=6.0.0

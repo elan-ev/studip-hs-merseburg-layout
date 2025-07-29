@@ -1,0 +1,234 @@
+:root {
+    --base-color: #003c64;
+}
+
+body {
+    grid-template-columns: 0px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+#header-logo {
+    max-height: 48px;
+    width: auto;
+}
+
+#header-button-wrapper > form > button.button {
+    margin: 0;
+}
+
+#background-desktop,
+#background-mobile {
+    background: white !important;
+}
+
+#login-content-wrapper,
+#loginbox {
+    min-height: unset;
+    border-radius: 9px;
+}
+
+#content.loginpage {
+    height: unset;
+}
+
+#login-wrapper {
+    top: unset;
+}
+
+#login-content-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: inherit;
+    background: conic-gradient(from 90deg, #00f0ff, #7b2ff7, #f107a3, #00ff9f, #00f0ff);
+    filter: blur(20px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#loginbox form#login-form {
+    border-bottom: none;
+}
+
+#login-form > a,
+#loginbox > header,
+#loginbox > nav {
+    display: none;
+}
+
+#loginbox form#login-form .login-button-wrapper {
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#loginbox form#login-form .login-button-wrapper button {
+    width: unset;
+}
+
+button.button {
+    border-color: #b5b5b5;
+    color: #414141;
+}
+
+a.button:hover, a.button:active, a.button.active,
+button.button:hover, button.button:active, button.button.active {
+  background-color: #414141;
+}
+
+a.button:not(:hover, :active, .active)::before, button.button:not(:hover, :active, .active)::before {
+  filter: brightness(0%);
+}
+
+#content > h2.big-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 2rem 0 3rem 0;
+}
+
+/* File upload */
+
+.holder {
+    max-width: 768px;
+    margin: 2rem auto;
+    padding: 2rem !important;
+    border-style: solid !important;
+    border-color: #b5b5b5 !important;
+    background-color: #fff;
+    color: #414141;
+}
+
+.holder::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: inherit;
+    background: conic-gradient(from 90deg, #00f0ff, #7b2ff7, #f107a3, #00ff9f, #00f0ff);
+    filter: blur(20px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.holder .icon-upload {
+    padding-bottom: 2rem;
+}
+.holder .icon-upload img {
+    filter: invert(25%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(96%) contrast(90%);
+}
+
+
+.responsive-display body {
+    display: grid;
+}
+
+.responsive-display #main-header{
+    padding: 1rem 1.5rem;
+}
+
+.responsive-display #header-logo {
+    max-height: 36px;
+}
+
+html:not(.size-medium) #login-wrapper {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.responsive-display #content-wrapper, .fullscreen-mode body:not(.consuming_mode) #content-wrapper {
+    margin-top: 0;
+}
+
+.responsive-display #content > h2.big-title {
+    margin: 1rem 0 2rem;
+    font-size: 2rem;
+}
+
+.responsive-display .holder {
+    max-width: 80%;
+}
+
+/* Dialog */
+.studip-dialog-overlay {
+    background-color: #555555 !important;
+}
+
+.studip-dialog-body {
+    border-radius: 0.5rem;
+}
+
+.studip-dialog-body .studip-dialog-header {
+    background: var(--color--white);
+    color: var(--color--black);
+}
+
+.studip-dialog-body.studip-dialog-warning .studip-dialog-header {
+    background: #f59100;
+    color: #fff;
+}
+
+/* Table */
+div.speech-to-text-table-wrapper {
+    margin-inline: auto;
+}
+
+table.default {
+    color: #414141;
+    max-width: 80rem;
+    margin-inline: auto;
+    margin-block: 3rem;
+}
+
+table.default > thead > tr > th {
+    background: none;
+    color: #414141;
+}
+
+.sortable-table .header, .sortable-table .tablesorter-header:not(.sorter-false) {
+    color: #414141;
+}
+
+/* Icons */
+img[src*="images/icons/blue"] {
+  filter: brightness(0%);
+}
+
+/* Forms */
+form.default .studiprequired .asterisk {
+    color: var(--text-color);
+}
+
+/* Footer */
+#main-footer {
+    background-color: #fafafa;
+    color: #555555;
+}
+
+#main-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-block: 0.5rem;
+    width: 100%;
+}
+
+#main-footer li:not(:first-of-type)::before {
+    content: "–";
+    margin-inline: 0.75rem;
+}
+
+#main-footer a, #main-footer a:link, #main-footer a:visited {
+    color: #555555;
+}

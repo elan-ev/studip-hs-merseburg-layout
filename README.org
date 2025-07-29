@@ -1,0 +1,23 @@
+#+title: Stud.IP-HS-Merseburg-Layout-Plugin
+
+* Beschreibung
+
+Das HsMerseburgLayout-Plugin passt die Oberfläche, das User Interface und die Funktionalität eines Stud.IP an die Vorgaben der HS Merseburg an, sodass es als Basis für den Audiotranskriptionsdienst geeignet ist.
+
+* Systemanforderungen
+
+- Stud.IP ab Version 6.0
+- SpeechToTextPlugin
+
+* Lizenz
+
+[[./agplv3.png]]
+
+Dieses Projekt unterliegt der GNU Affero General Public License v3.0 oder höher (AGPL-3.0-oder-höher).
+
+Weitere Informationen finden Sie in der Datei [[file:LICENSE]] oder unter [[https://www.gnu.org/licenses/agpl-3.0.html]].
+
+# Local Variables:
+# ispell-local-dictionary: "deutsch"
+# fill-column: 2000
+# End:

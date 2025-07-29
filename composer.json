@@ -1,0 +1,10 @@
+{
+    "name": "elan-ev/studip-layout-hs-merseburg",
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "ElanEv\\": "lib/"
+        }
+    },
+    "require": {}
+}
