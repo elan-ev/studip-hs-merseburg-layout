@@ -91,7 +91,9 @@ class HsMerseburgLayout extends StudIPPlugin implements SystemPlugin
         $job->input_file_ref_id = null;
         $job->store();
 
-        $inputFileRef->delete();
+        if ($inputFileRef) {
+            $inputFileRef->delete();
+        }
     }
 
     private function loadStartPage(): void
