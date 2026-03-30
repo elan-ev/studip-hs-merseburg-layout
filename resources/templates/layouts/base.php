@@ -63,7 +63,8 @@ $lang_attr = str_replace('_', '-', $_SESSION['_language']);
                 'ENTRIES_PER_PAGE'     => Config::get()->ENTRIES_PER_PAGE,
                 'OPENGRAPH_ENABLE'     => Config::get()->OPENGRAPH_ENABLE,
                 'COURSEWARE_CERTIFICATES_ENABLE' => Config::get()->COURSEWARE_CERTIFICATES_ENABLE,
-                'ENABLE_COURSESET_FCFS' => (bool) Config::get()->ENABLE_COURSESET_FCFS
+                'ENABLE_COURSESET_FCFS' => (bool) Config::get()->ENABLE_COURSESET_FCFS,
+                'S2T_QUOTA' => class_exists(\SpeechToTextPlugin\Models\UserUpload::class) ? \SpeechToTextPlugin\Models\UserUpload::getQuota(User::findCurrent()) : null,
             ]) ?>,
             jsonapi_schemas: <?= json_encode($getJsonApiSchemas()) ?>,
         }
